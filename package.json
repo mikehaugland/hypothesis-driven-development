@@ -1,0 +1,27 @@
+{
+  "name": "hypothesis-driven-development",
+  "version": "1.0.0",
+  "description": "Hypothesis Driven Development presentation powered by MDX Deck",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mdx-deck": "^3.0.8"
+  },
+  "scripts": {
+    "start": "mdx-deck deck.mdx",
+    "build": "mdx-deck build deck.mdx",
+    "pdf": "mdx-deck pdf deck.mdx",
+    "image": "mdx-deck screenshot deck.mdx",
+    "help": "mdx-deck"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikehaugland/hypothesis-driven-development.git"
+  },
+  "author": "Mike Haugland",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikehaugland/hypothesis-driven-development/issues"
+  },
+  "homepage": "https://github.com/mikehaugland/hypothesis-driven-development#readme"
+}
