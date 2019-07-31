@@ -1,22 +1,125 @@
-import { Head } from 'mdx-deck'
+import {
+  Head, Image, Notes, Appear,
+  Invert, Split, SplitRight, FullScreenCode, Horizontal
+} from 'mdx-deck'
+import { yellow } from '@mdx-deck/themes'
+
+export const themes = [ yellow ]
 
 <Head>
-    <title>Hypotheis Driven Development</title>
+    <title>Hypothesis Driven Development</title>
+    <meta name='twitter:card' content='summary' />
+    <meta name='twitter:site' content='@mikehaugland' />
+    <meta name='twitter:title' content='Hypothesis Driven Development' />
+    <meta name='twitter:description' content='Presentation by Mike Haugland' />
+
+    <meta property="og:title" content="Hypothesis Driven Development" />
+    <meta property="og:description" content="Presentation by Mike Haugland" />
+    <meta property="og:url" content="https://hypothesis-driven-development.mikehaugland.com/" />
+    <meta property="og:type" content="website" />
 </Head>
+
+<Split>
 
 # Hypothesis Driven Development
 
 by [Mike Haugland](https://mikehaugland.com/)
 ([@mikehaugland](https://twitter.com/mikehaugland))
 
+</Split>
+
 ---
+
+## Disclaimer
+
+For purposes of this presentation I want to avoid talking about particular tools, libraries, frameworks, or services.
+
+They're _great_ and can really help the process, but I want to discuss theory instead of implementation.
+
+---
+
+<Split>
 
 # What is it?
 
 A hypothesis is:
 
-> a supposition or proposed explanation made on the basis of limited evidence as a starting point for further investigation.
+> “a supposition or proposed explanation made on the basis of limited evidence as a starting point for further investigation”
+
+</Split>
 
 ---
 
-Which means Hypothesis Driven Development is the process of using a hypothesis to validate feature development.
+<Split>
+
+# What is it?
+
+Which means Hypothesis Driven Development is the process of using a hypothesis to inform feature development with the further step of validation via data.
+
+</Split>
+
+---
+
+# Isn't that A/B testing?
+
+<Appear>
+
+## Kind of.
+
+A/B testing can be a form of HDD.
+
+</Appear>
+
+---
+
+## A/B Testing
+
+If you're used to A/B testing, it means you're already familiar with collecting metrics.
+
+Collecting metrics is vital for validating a hypothesis.
+
+---
+
+## A/B Testing
+
+Adding HDD to an existing A/B testing flow should be easy.
+
+---
+
+# HDD Steps
+
+1. Define hypothesis
+2. Implement feature with metrics tracking
+3. Collect data
+4. Analyze
+
+---
+
+# Iteration
+
+Like any new process it takes time to get good at it. There's no rigid process to follow which means it's adaptable and flexible, but also means you may need to iterate until it feels right.
+
+---
+
+# Implement Intelligently
+
+* Not ever feature or change needs a hypothesis.
+* If your app needs user registration to use, it's not helpful to hypothesis that account creation is needed.
+* You could, however, hypothesis one form of registration may outperform another.
+
+---
+
+# Resources
+
+More on the subject, including examples.
+
+* [How to Implement Hypothesis-Driven Development](https://www.thoughtworks.com/insights/blog/how-implement-hypothesis-driven-development)
+* [Why hypothesis-driven development is key to DevOps](https://opensource.com/article/19/6/why-hypothesis-driven-development-devops)
+* [Hypothesis-driven development](https://www.ibm.com/cloud/garage/practices/learn/practice_hypothesis_driven_development/)
+* [Setting Up An Experiment Framework & Hypothesis Driven Development Programme](https://medium.com/@made_by_mark/setting-up-an-experiment-framework-hypothesis-driven-development-programme-fa58b3986c05)
+
+---
+
+# That's all!
+
+## Thanks for reading
